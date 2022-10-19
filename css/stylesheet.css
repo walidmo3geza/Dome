@@ -1,0 +1,56 @@
+:root {
+    --main-color: #ff7b00;
+    --second-color: #cc6002;
+    --third-color:#ff7b00;
+}
+
+.main-btn {
+    background-color: var(--main-color);
+    border-radius: 0%;
+    color: white;
+}
+.second-btn {
+    background-color: var(--third-color);
+    border-radius: 0%;
+    color: white;
+}
+.third-btn {
+    background-color: white;
+    border-radius: 0%;
+    color: black;
+}
+.main-btn:hover {
+    background-color: var(--second-color) !important;
+    border-radius: 0%;
+    color: white;
+}
+.second-btn:hover {
+    background-color: var(--third-color) !important;
+    border-radius: 0%;
+    color: white;
+}
+.third-btn:hover {
+    background-color: white !important;
+    border-radius: 0%;
+    color: black !important;
+}
+.border-top-styling{
+    border: none;
+    border-radius: 0%;
+    border-top: 1px solid var(--main-color);
+}
+.color-styling{
+    color: rgb(232, 226, 226);
+}
+.white-color{
+    color: white;
+}
+.gray-color{
+    color: gray;
+}
+.caresol-hieght{
+    /* max-height: calc(100vh - 138.64px); */
+}
+.color-styling2{
+    color: black;
+}
