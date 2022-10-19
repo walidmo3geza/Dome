@@ -2,8 +2,11 @@
     --main-color: #ff7b00;
     --second-color: #cc6002;
     --third-color:#ff7b00;
+    --footer-color: #02040f;
 }
-
+.main-color{
+    color: var(--main-color) !important;
+}
 .main-btn {
     background-color: var(--main-color);
     border-radius: 0%;
@@ -49,8 +52,78 @@
     color: gray;
 }
 .caresol-hieght{
-    /* max-height: calc(100vh - 138.64px); */
+    max-height: calc(100vh - 138.64px);
 }
 .color-styling2{
     color: black;
+}
+.border-radious-none{
+    border-radius: 0%;
+}
+.border-none{
+    border: none;
+}
+.position-relative-1{
+    /* position: relative; */
+}
+.icon-styling{
+    background-color: var(--main-color);
+    border-radius: 100%;
+    width: 0.8em;
+    color: white;
+    font-size: xx-large;
+    padding: 0.5em;
+    /* position: absolute;
+    bottom: 5.5em;
+    left: 5.5em; */
+}
+.bg-image{
+    background-image: url("../images/bg-1.jpg");
+    /* object-fit: none; */
+    /* background-size: auto; */
+    
+    /* background-color: aqua; */
+}
+.width-resize{
+    width: 95%;
+    margin: auto;
+}
+.list-styling{
+    list-style-type: none;
+}
+.icon-footer-styling{
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+
+}
+.bg-styling{
+    background-color: var(--main-color);
+}
+.border-styling{
+    border: 1px solid white;
+}
+.bg-black-styling{
+background-color: var(--footer-color);
+}
+.card-styling{
+    position: relative;
+    bottom: 200px;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto !important;
+}
+.icon-card-styling{
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 100%;
+    width: 10%;
+}
+.icon-add-styling{
+    background-color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 100%;
+    /* width: 10%; */
 }
