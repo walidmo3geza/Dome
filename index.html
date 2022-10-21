@@ -35,14 +35,14 @@
         </div>
     </header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light bg-white py-4">
+    <nav class="navbar navbar-expand-lg bg-light bg-white py-4 sticky-top">
         <div class="container container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.svg" alt="Bootstrap" class="w-100 h-100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,7 +53,7 @@
                     <li class="nav-item dropdown px-3">
                         <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Pages
-                            <i class="fa-solid fa-circle-chevron-down color-styling"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu border-top-styling">
                             <li><a class="dropdown-item" href="#">About</a></li>
@@ -67,7 +67,7 @@
                     <li class="nav-item dropdown px-3">
                         <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
-                            <i class="fa-solid fa-circle-chevron-down color-styling"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu border-top-styling">
                             <li><a class="dropdown-item" href="#">About</a></li>
@@ -77,7 +77,7 @@
                     <li class="nav-item dropdown px-3">
                         <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Blog
-                            <i class="fa-solid fa-circle-chevron-down color-styling"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu border-top-styling">
                             <li><a class="dropdown-item" href="#">Blog</a></li>
@@ -101,21 +101,33 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/home-banner-1.jpg" class="d-block w-100 caresol-hieght" alt="...">
-                <div class="carousel-caption">
-                    <div class="text-center">
-                        <div class=" text-white mb-3 fw-bold">Power Customization</div>
-                        <h1 class="display-1 text-white mb-3 fw-bold">We Are Best Builders In The world </h1>
-                        <p class=" text-white fw-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <div class="pt-3">
-                            <a class="btn me-3 second-btn  px-3 py-2" href="#">
-                                Explore More
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                            <a class="btn third-btn  px-3 py-2" href="#">
-                                Get In Touch
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
+                <div class="carousel-caption p-0 caresol-hieght">
+                    <div class="row h-100">
+                        <div class="col-12 py-lg-4">
+                            Power Customization
+                        </div>
+                        <div class="col-12 carousel-styling py-lg-3">
+                            <h1 class="text-white fw-bold display-1">We Are Best Builders In The world </h1>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-white fw-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6 text-end">
+                                    <a class="btn second-btn  px-3 py-2" href="#">
+                                        Explore More
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="col-6 text-start pb-lg-5">
+                                    <a class="btn third-btn" href="#">
+                                        Get In Touch
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -260,7 +272,9 @@
                         <div class="card-body card-styling">
                             <h6 class="card-title text-black">Pxdraft Studio</h6>
                             <h2>Our solution for your business.</h2>
-                            <a href="#" class="btn btn-link m-0 p-0 main-color">Read More</a>
+                            <a class="btn me-3 second-btn  px-3 py-2" href="#">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -270,17 +284,21 @@
                         <div class="card-body card-styling">
                             <h6 class="card-title text-black">Pxdraft Studio</h6>
                             <h2>Our solution for your business.</h2>
-                            <a href="#" class="btn btn-link m-0 p-0 main-color">Read More</a>
+                            <a class="btn me-3 second-btn  px-3 py-2" href="#">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-4 border-radious-none border-0">
+                    <div onmouseover="displayBtn()" class="card my-4 border-radious-none border-0">
                         <img src="./images/project-3.jpg" class="card-img-top border-radious-none" alt="...">
-                        <div class="card-body card-styling">
+                        <div id="card-body" class="card-body card-styling">
                             <h6 class="card-title text-black">Pxdraft Studio</h6>
                             <h2>Our solution for your business.</h2>
-                            <a href="#" class="btn btn-link m-0 p-0 main-color">Read More</a>
+                            <a id="btn" class="btn me-3 second-btn  px-3 py-2" href="#">
+                                View Project
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -294,49 +312,53 @@
                 <div class="text-center">
                     <h5 class="text-warning fw-bold">Our Work</h5>
                     <h1 class="fw-bold pb-3">Explore Recent Projects</h1>
-                    <p class="text-secondary w-50 m-auto fw-bold mb-5">Dome is a HTML5 template based on Sass and Bootstrap
+                    <p class="text-secondary w-50 m-auto fw-bold mb-5">Dome is a HTML5 template based on Sass and
+                        Bootstrap
                         5 with modern and creative multipurpose design you can
                         use it as a startups.</p>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-12">
-                        <div class="card py-5">
+                        <div class="card py-5 py-5">
                             <div class="card-body text-center">
-                                <i class="fa-solid fa-1 icon-card-styling fw-bold fs-1 p-4"></i>
-                              <h5 class="card-title">General Contract</h5>
-                              <p class="card-text">Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has
-                                 been standard dummy.
+                                <i class="fa-solid fa-1 icon-card-styling fw-bold fs-1 p-4 my-3"></i>
+                                <h5 class="card-title py-2">General Contract</h5>
+                                <p class="card-text px-2">Lorem Ipsum is simply text of the printing and typesetting
+                                    industry. Lorem Ipsum has
+                                    been standard dummy.
                                 </p>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="card py-5">
                             <div class="card-body text-center">
-                                <i class="fa-solid fa-2 icon-card-styling fw-bold fs-1 p-4"></i>
-                              <h5 class="card-title">General Contract</h5>
-                              <p class="card-text">Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has
-                                 been standard dummy.
+                                <i class="fa-solid fa-2 icon-card-styling fw-bold fs-1 p-4 my-3"></i>
+                                <h5 class="card-title py-2">Project Planing</h5>
+                                <p class="card-text px-2">Lorem Ipsum is simply text of the printing and typesetting
+                                    industry. Lorem Ipsum has
+                                    been standard dummy.
                                 </p>
                             </div>
-                          </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="card py-5">
                             <div class="card-body text-center">
-                                <i class="fa-solid fa-3 icon-card-styling fw-bold fs-1 p-4"></i>
-                              <h5 class="card-title">General Contract</h5>
-                              <p class="card-text">Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has
-                                 been standard dummy.
+                                <i class="fa-solid fa-3 icon-card-styling fw-bold fs-1 p-4 my-3"></i>
+                                <h5 class="card-title py-2">Interior Design</h5>
+                                <p class="card-text px-2">Lorem Ipsum is simply text of the printing and typesetting
+                                    industry. Lorem Ipsum has
+                                    been standard dummy.
                                 </p>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- standared image section -->
     <section class="pb-5">
         <div class="bg-image text-center py-5">
             <h1 class=" text-light pt-5 pb-3">We Building Everything That Needed You</h1>
@@ -450,9 +472,269 @@
 
         </div>
     </section>
+    <!-- Working With Excellent -->
+    <section>
+        <div class="row my-5 g-0">
+            <div class="col-lg-6 col-md-12 bg-mai-color py-5">
+                <div class="px-lg-5 mx-lg-5 m-auto py-0 align-middle">
+                    <h5 class="text-white pt-5">Working With Excellent</h5>
+                    <h1 class="text-white py-3">Construction & Engineering Real Solutions.</h1>
+                    <p class="text-white py-3">Dome is a HTML5 template based on Sass and Bootstrap 5 with modern and creative multipurpose design you can use 
+                        it as a startups.</p>
+                    <ul class="text-white list-styling px-0">
+                        <li class="py-1">
+                            <i class="fa-solid fa-check bg-white text-black border-radious-50"></i>
+                            Beautiful and easy to understand UI, professional animations
+                        </li>
+                        <li class="py-1">
+                            <i class="fa-solid fa-check bg-white text-black border-radious-50"></i>
+                            Theme advantages are pixel perfect design & clear code delivered
+                        </li>
+                        <li class="py-1">
+                            <i class="fa-solid fa-check bg-white text-black border-radious-50"></i>
+                            Present your services with flexible, convenient and multipurpose
+                        </li>
+                        <li class="py-1">
+                            <i class="fa-solid fa-check bg-white text-black border-radious-50"></i>
+                            Find more creative ideas for your projects
+                        </li>
+                        <li class="py-1">
+                            <i class="fa-solid fa-check bg-white text-black border-radious-50"></i>
+                            Unlimited power and customization possibilities
+                        </li>
+                    </ul>
+                    <a class="btn me-3 fourth-btn  px-4 py-3 mb-5 mt-3" href="#">
+                        Reed More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 bg-image4 min-vh-100 mw-100">
+            </div>
+        </div>
+    </section>
+    <!-- Our Team -->
+    <section>
+        <div class="container">
+            <div class="text-center">
+                <h5 class="text-warning fw-bold">Our Team</h5>
+                <h1 class="fw-bold pb-3">Our Motivated Team</h1>
+                <p class="text-secondary w-50 m-auto fw-bold mb-5">
+                    Dome is a HTML5 template based on Sass and Bootstrap 5 with modern and creative multipurpose design you can use it
+                     as a startups.
+                </p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none border-none">
+                        <div class="text-center position-relative">
+                            <img src="./images/team-21.jpg" class="card-img-top border-radious-none" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black">Nancy Bayers</h5>
+                            <p class="card-text text-secondary">
+                                CEO, pxdraft Studio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none border-none">
+                        <div class="text-center position-relative">
+                            <img src="./images/team-20.jpg" class="card-img-top border-radious-none" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black">Nancy Bayers</h5>
+                            <p class="card-text text-secondary">
+                                CEO, pxdraft Studio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none border-none">
+                        <div class="text-center position-relative">
+                            <img src="./images/team-19.jpg" class="card-img-top border-radious-none" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black">Nancy Bayers</h5>
+                            <p class="card-text text-secondary">
+                                CEO, pxdraft Studio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none border-none">
+                        <div class="text-center position-relative">
+                            <img src="./images/team-18.jpg" class="card-img-top border-radious-none" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-black">Nancy Bayers</h5>
+                            <p class="card-text text-secondary">
+                                CEO, pxdraft Studio
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-
+        </div>
+    </section>
+    <!-- standared image section -->
+    <section class="pb-5 my-5">
+        <div class="bg-image2 text-center py-5">
+            <div class="row py-5 text-white mx-5">
+                <div class="col-lg-3 col-sm-6">
+                    <i class="fa-solid fa-desktop static-image-icon"></i>
+                    <h4 class="py-3">4506</h4>
+                    <p>Project Complated</p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <i class="fa-solid fa-camera-retro static-image-icon"></i>
+                    <h4 class="py-3">1580</h4>
+                    <p>Work Employed</p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <i class="fa-solid fa-laptop static-image-icon"></i>
+                    <h4 class="py-3">1280</h4>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <i class="fa-regular fa-comments static-image-icon"></i>
+                    <h4 class="py-3">9642</h4>
+                    <p>Painting Services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Clients Say -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="text-warning fw-bold">Our Clients Say</h5>
+                <h1 class="fw-bold pb-3">Clients Say About Us</h1>
+                <p class="text-secondary w-50 m-auto mb-5">
+                    Dome is a HTML5 template based on Sass and Bootstrap 5 with modern and creative multipurpose design you can use it 
+                    as a startups.
+                </p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none">
+                        <div class="text-center py-4 mt-3">
+                            <img src="./images/team-21.jpg" class="card-img-top border-radious-50 h-25 w-25" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-secondary">
+                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect 
+                                guy for the job. He is a true professional.
+                            </p>
+                            <h5 class="mb-1">Shoko Mugikura</h5>
+                            <p class="card-text text-secondary pt-1">Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none">
+                        <div class="text-center py-4 mt-3">
+                            <img src="./images/team-20.jpg" class="card-img-top border-radious-50 h-25 w-25" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-secondary">
+                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect 
+                                guy for the job. He is a true professional.
+                            </p>
+                            <h5 class="mb-1">Shoko Mugikura</h5>
+                            <p class="card-text text-secondary pt-1">Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none">
+                        <div class="text-center py-4 mt-3">
+                            <img src="./images/team-19.jpg" class="card-img-top border-radious-50 h-25 w-25" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                            <p class="card-text text-secondary">
+                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect 
+                                guy for the job. He is a true professional.
+                            </p>
+                            <h5 class="mb-1">Shoko Mugikura</h5>
+                            <p class="card-text text-secondary pt-1">Graphic Designer</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- Our Blogs -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="text-warning fw-bold pt-5">Our Blogs</h5>
+                <h1 class="fw-bold pb-3">Interesting stories</h1>
+                <p class="text-secondary w-50 m-auto fw-bold mb-5">
+                    Dome is a HTML5 template based on Sass and Bootstrap 5 with modern and creative multipurpose design you can use it 
+                    as a startups.
+                </p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none border-none bg-light">
+                        <div class="text-center">
+                            <img src="./images/blog-1.jpg" class="card-img-top border-radious-none" alt="...">
+                        </div>
+                        <div class="card-body position-styling">
+                            <p class="card-text text-secondary">
+                                <i class="far fa-clock"></i>
+                                March 14, 2021
+                            </p>
+                            <h5 class="card-title text-black">Construction Management</h5>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                do eiusmod tempor incididunt
+                                ut labore et</p>
+                            <a href="#" class="btn btn-link m-0 p-0 main-color">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none border-none bg-light">
+                        <div class="text-center">
+                            <img src="./images/blog-2.jpg" class="card-img-top border-radious-none" alt="...">
+                        </div>
+                        <div class="card-body position-styling">
+                            <p class="card-text text-secondary">
+                                <i class="far fa-clock"></i>
+                                March 14, 2021
+                            </p>
+                            <h5 class="card-title text-black">Construction Management</h5>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                do eiusmod tempor incididunt
+                                ut labore et</p>
+                            <a href="#" class="btn btn-link m-0 p-0 main-color">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-4 border-radious-none border-none bg-light">
+                        <div class="text-center">
+                            <img src="./images/blog-3.jpg" class="card-img-top border-radious-none" alt="...">
+                        </div>
+                        <div class="card-body position-styling">
+                            <p class="card-text text-secondary">
+                                <i class="far fa-clock"></i>
+                                March 14, 2021
+                            </p>
+                            <h5 class="card-title text-black">Construction Management</h5>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                do eiusmod tempor incididunt
+                                ut labore et</p>
+                            <a href="#" class="btn btn-link m-0 p-0 main-color">Read More</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
     <footer class="mt-5">
         <div class="bg-styling">
             <div class="container">
@@ -558,13 +840,13 @@
                     </div>
                     <div class="col-12 my-4">
                         <div class="row justify-content-between">
-                            <div class="col-md-6 col-sm-12">
+                            <div class="col-md-6 col-sm-12 text-center text-md-start">
                                 <i class="fa-brands fa-facebook icon-footer-styling p-1 fs-4 mx-1"></i>
                                 <i class="fa-brands fa-twitter icon-footer-styling p-1 fs-4 mx-1"></i>
                                 <i class="fa-brands fa-instagram icon-footer-styling p-1 fs-4 mx-1"></i>
                                 <i class="fa-brands fa-linkedin icon-footer-styling p-1 fs-4 mx-1"></i>
                             </div>
-                            <div class="col-md-6 col-sm-12 text-md-end">
+                            <div class="col-md-6 col-sm-12 text-center text-md-end">
                                 © 2021 copyright pxdraft
                             </div>
                         </div>
@@ -576,11 +858,11 @@
     </footer>
 
 
+    <script src="./javascript/javascript.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>

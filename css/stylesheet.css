@@ -4,6 +4,14 @@
     --third-color:#ff7b00;
     --footer-color: #02040f;
 }
+@media only screen and (max-width: 990px) {
+    .carousel-styling h1 {
+        width: 100% !important;
+    }
+}
+.bg-mai-color{
+    background-color: var(--main-color);
+}
 .main-color{
     color: var(--main-color) !important;
 }
@@ -22,20 +30,32 @@
     border-radius: 0%;
     color: black;
 }
+.fourth-btn{
+    background-color: var(--third-color);
+    border-radius: 0%;
+    color: white;
+    border: 1px solid white;
+}
 .main-btn:hover {
     background-color: var(--second-color) !important;
     border-radius: 0%;
     color: white;
 }
 .second-btn:hover {
-    background-color: var(--third-color) !important;
+    background-color: var(--second-color) !important;
     border-radius: 0%;
-    color: white;
+    color: white !important;
 }
 .third-btn:hover {
     background-color: white !important;
     border-radius: 0%;
     color: black !important;
+}
+.fourth-btn:hover{
+    background-color: white !important;
+    border-radius: 0%;
+    color: black;
+    border: 1px solid white;
 }
 .border-top-styling{
     border: none;
@@ -73,16 +93,23 @@
     color: white;
     font-size: xx-large;
     padding: 0.5em;
-    /* position: absolute;
-    bottom: 5.5em;
-    left: 5.5em; */
 }
 .bg-image{
     background-image: url("../images/bg-1.jpg");
-    /* object-fit: none; */
-    /* background-size: auto; */
-    
-    /* background-color: aqua; */
+    background-attachment: fixed;
+}
+.bg-image2{
+    background-image: url("../images/bg-3.jpg");
+    background-attachment: fixed;
+}
+.bg-image3{
+    background-image: url("../images/bg-3.jpg");
+    background-attachment: fixed;
+}
+.bg-image4{
+    background-image: url("../images/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 .width-resize{
     width: 95%;
@@ -126,4 +153,17 @@ background-color: var(--footer-color);
     border: 1px solid var(--main-color);
     border-radius: 100%;
     /* width: 10%; */
+}
+.border-radious-50{
+    border-radius: 50%;
+}
+.static-image-icon{
+    font-size: 50px;
+}
+.position-styling{
+    position: relative;
+    bottom: 50px;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
 }
