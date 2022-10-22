@@ -1,24 +1,27 @@
 function onload(){
-    let cards = document.getElementsByClassName("card");
-    cards.forEach(card => {
-        addEventListener(onmouseover(displayBtn),card);
-        addEventListener(onmouseout(hideBtn),card);
-    });
+    
 }
-function displayBtn(){
-    let cardBody=this.getElementById("card-body");
-    let btn = this.getElementById("btn");
-    btn.style.width = "150px";
-    btn.classList.add("d-block");
-    btn.classList.remove("d-none");
-    cardBody.style.bottom = "200px";
+function displayBtn(item){
+    item.lastElementChild.lastElementChild.classList.add("d-block");
+    item.lastElementChild.lastElementChild.classList.remove("d-none");
+    item.lastElementChild.lastElementChild.style.width = "130px";
+    //item.lastElementChild.style.bottom = "8%";
 }
 
-function hideBtn(){
-    var cardBody=document.getElementById("card-body");
-    let btn = document.getElementById("btn");
-    //btn.style.width = "150px";
-    btn.classList.remove("d-block");
-    btn.classList.add("d-none");
-    cardBody.style.bottom = "170px";
+function hideBtn(item){
+    item.lastElementChild.lastElementChild.classList.add("d-none");
+    item.lastElementChild.lastElementChild.classList.remove("d-block");
+    //item.lastElementChild.style.bottom = "8%";
+}
+function displayIcons(item){
+    item.firstElementChild.classList.remove("d-none");
+    item.firstElementChild.classList.add("d-block");
+    item.lastElementChild.classList.remove("d-none");
+    item.lastElementChild.classList.add("d-block");
+}
+function hideIcons(item){
+    item.firstElementChild.classList.add("d-none");
+    item.firstElementChild.classList.remove("d-block");
+    item.lastElementChild.classList.add("d-none");
+    item.lastElementChild.classList.remove("d-block");
 }

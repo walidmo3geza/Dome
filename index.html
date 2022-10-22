@@ -97,7 +97,7 @@
         </div>
     </nav>
     <!-- carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide data-bs-target my-5" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide data-bs-target" data-bs-ride="false">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/home-banner-1.jpg" class="d-block w-100 caresol-hieght" alt="...">
@@ -168,7 +168,7 @@
     </div>
     <!-- Where Can We Help You -->
     <section>
-        <div class=" py-5">
+        <div class="">
             <div class="container ">
                 <div class="card mb-3 py-5 border-none">
                     <div class="row">
@@ -256,7 +256,7 @@
         </div>
     </section>
     <!-- Explore Recent Projects -->
-    <section class="mt-5 pt-5">
+    <section class="mt-5">
         <div class="container">
             <div class="text-center">
                 <h5 class="text-warning fw-bold">Our Work</h5>
@@ -267,36 +267,36 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-4 border-radious-none border-0">
+                    <div onmouseover="displayBtn(this)" onmouseout="hideBtn(this)" class="card my-4 border-radious-none border-0 position-relative">
                         <img src="./images/project-1.jpg" class="card-img-top border-radious-none" alt="...">
-                        <div class="card-body card-styling">
+                        <div id="card-body" class="card-body position-absolute card-styling">
                             <h6 class="card-title text-black">Pxdraft Studio</h6>
                             <h2>Our solution for your business.</h2>
-                            <a class="btn me-3 second-btn  px-3 py-2" href="#">
+                            <a id="btn" class="btn me-3 second-btn  px-3 py-2 d-none" href="#">
                                 View Project
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 my-3">
-                    <div class="card my-4 border-radious-none border-0">
+                    <div onmouseover="displayBtn(this)" onmouseout="hideBtn(this)" class="card my-4 border-radious-none border-0 position-relative">
                         <img src="./images/project-2.jpg" class="card-img-top border-radious-none" alt="...">
-                        <div class="card-body card-styling">
+                        <div id="card-body" class="card-body position-absolute card-styling">
                             <h6 class="card-title text-black">Pxdraft Studio</h6>
                             <h2>Our solution for your business.</h2>
-                            <a class="btn me-3 second-btn  px-3 py-2" href="#">
+                            <a id="btn" class="btn me-3 second-btn  px-3 py-2 d-none" href="#">
                                 View Project
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 my-3">
-                    <div onmouseover="displayBtn()" class="card my-4 border-radious-none border-0">
+                <div class=" col-lg-4 col-md-6 my-3">
+                    <div onmouseover="displayBtn(this)" onmouseout="hideBtn(this)" class="card my-4 border-radious-none border-0 position-relative">
                         <img src="./images/project-3.jpg" class="card-img-top border-radious-none" alt="...">
-                        <div id="card-body" class="card-body card-styling">
+                        <div id="card-body" class="card-body position-absolute card-styling">
                             <h6 class="card-title text-black">Pxdraft Studio</h6>
                             <h2>Our solution for your business.</h2>
-                            <a id="btn" class="btn me-3 second-btn  px-3 py-2" href="#">
+                            <a id="btn" class="btn me-3 second-btn  px-3 py-2 d-none" href="#">
                                 View Project
                             </a>
                         </div>
@@ -307,7 +307,7 @@
     </section>
     <!-- Our Work Process -->
     <section>
-        <div class="bg-light py-5">
+        <div class="bg-light">
             <div class="container py-5">
                 <div class="text-center">
                     <h5 class="text-warning fw-bold">Our Work</h5>
@@ -475,7 +475,7 @@
     <!-- Working With Excellent -->
     <section>
         <div class="row my-5 g-0">
-            <div class="col-lg-6 col-md-12 bg-mai-color py-5">
+            <div class="col-lg-6 col-md-12 bg-mai-color py-5 px-3">
                 <div class="px-lg-5 mx-lg-5 m-auto py-0 align-middle">
                     <h5 class="text-white pt-5">Working With Excellent</h5>
                     <h1 class="text-white py-3">Construction & Engineering Real Solutions.</h1>
@@ -509,7 +509,8 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 bg-image4 min-vh-100 mw-100">
+            <div class="col-lg-6 col-md-12 min-vh-100 mw-100">
+                <img class="w-100 h-100" src="./images/bg-2.jpg" alt="">
             </div>
         </div>
     </section>
@@ -526,8 +527,14 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-3 col-md-6 my-3">
-                    <div class="card my-4 border-radious-none border-none">
-                        <div class="text-center position-relative">
+                    <div onmouseover="displayIcons(this)" onmouseout="hideIcons(this)" class="card my-4 border-radious-none border-none position-relative">
+                        <div class="text-center position-absolute top-50 d-none" style="left: 25%;">
+                            <i class="fa-brands fa-facebook-f icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-twitter icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-linkedin-in icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-instagram icon-our-team-styling p-1 fs-4 mx-1"></i>
+                        </div>
+                        <div class="text-center">
                             <img src="./images/team-21.jpg" class="card-img-top border-radious-none" alt="...">
                         </div>
                         <div class="card-body text-center">
@@ -536,11 +543,18 @@
                                 CEO, pxdraft Studio
                             </p>
                         </div>
+                        <div class="div-styling position-absolute top-0 d-none"></div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 my-3">
-                    <div class="card my-4 border-radious-none border-none">
-                        <div class="text-center position-relative">
+                    <div onmouseover="displayIcons(this)" onmouseout="hideIcons(this)" class="card my-4 border-radious-none border-none position-relative">
+                        <div class="text-center position-absolute top-50 d-none" style="left: 25%;">
+                            <i class="fa-brands fa-facebook-f icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-twitter icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-linkedin-in icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-instagram icon-our-team-styling p-1 fs-4 mx-1"></i>
+                        </div>
+                        <div class="text-center">
                             <img src="./images/team-20.jpg" class="card-img-top border-radious-none" alt="...">
                         </div>
                         <div class="card-body text-center">
@@ -549,11 +563,18 @@
                                 CEO, pxdraft Studio
                             </p>
                         </div>
+                        <div class="div-styling position-absolute top-0 d-none"></div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 my-3">
-                    <div class="card my-4 border-radious-none border-none">
-                        <div class="text-center position-relative">
+                    <div onmouseover="displayIcons(this)" onmouseout="hideIcons(this)" class="card my-4 border-radious-none border-none position-relative">
+                        <div class="text-center position-absolute top-50 d-none" style="left: 25%;">
+                            <i class="fa-brands fa-facebook-f icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-twitter icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-linkedin-in icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-instagram icon-our-team-styling p-1 fs-4 mx-1"></i>
+                        </div>
+                        <div class="text-center">
                             <img src="./images/team-19.jpg" class="card-img-top border-radious-none" alt="...">
                         </div>
                         <div class="card-body text-center">
@@ -562,11 +583,18 @@
                                 CEO, pxdraft Studio
                             </p>
                         </div>
+                        <div class="div-styling position-absolute top-0 d-none"></div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 my-3">
-                    <div class="card my-4 border-radious-none border-none">
-                        <div class="text-center position-relative">
+                    <div onmouseover="displayIcons(this)" onmouseout="hideIcons(this)" class="card my-4 border-radious-none border-none position-relative">
+                        <div class="text-center position-absolute top-50 d-none" style="left: 25%;">
+                            <i class="fa-brands fa-facebook-f icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-twitter icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-linkedin-in icon-our-team-styling p-1 fs-4 mx-1"></i>
+                            <i class="fa-brands fa-instagram icon-our-team-styling p-1 fs-4 mx-1"></i>
+                        </div>
+                        <div class="text-center">
                             <img src="./images/team-18.jpg" class="card-img-top border-radious-none" alt="...">
                         </div>
                         <div class="card-body text-center">
@@ -575,6 +603,7 @@
                                 CEO, pxdraft Studio
                             </p>
                         </div>
+                        <div class="div-styling position-absolute top-0 d-none"></div>
                     </div>
                 </div>
             </div>
@@ -582,25 +611,25 @@
         </div>
     </section>
     <!-- standared image section -->
-    <section class="pb-5 my-5">
+    <section>
         <div class="bg-image2 text-center py-5">
-            <div class="row py-5 text-white mx-5">
-                <div class="col-lg-3 col-sm-6">
+            <div class="row text-white">
+                <div class="col-6 col-lg-3 col-md-6">
                     <i class="fa-solid fa-desktop static-image-icon"></i>
                     <h4 class="py-3">4506</h4>
                     <p>Project Complated</p>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-6 col-lg-3 col-md-6">
                     <i class="fa-solid fa-camera-retro static-image-icon"></i>
                     <h4 class="py-3">1580</h4>
                     <p>Work Employed</p>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-6 col-lg-3 col-md-6">
                     <i class="fa-solid fa-laptop static-image-icon"></i>
                     <h4 class="py-3">1280</h4>
                     <p>Happy Customers</p>
                 </div>
-                <div class="col-lg-3 col-sm-6">
+                <div class="col-6 col-lg-3 col-md-6">
                     <i class="fa-regular fa-comments static-image-icon"></i>
                     <h4 class="py-3">9642</h4>
                     <p>Painting Services</p>
@@ -736,7 +765,7 @@
         </div>
     </section>
     <footer class="mt-5">
-        <div class="bg-styling">
+        <div class="bg-image5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
