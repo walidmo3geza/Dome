@@ -5,7 +5,7 @@
     --footer-color: #02040f;
 }
 @media only screen and (max-width: 990px) {
-    .carousel-styling h1 {
+    .width-resize-100{
         width: 100% !important;
     }
 }
