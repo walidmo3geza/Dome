@@ -72,7 +72,7 @@
     color: gray;
 }
 .caresol-hieght{
-    max-height: calc(100vh - 138.64px);
+    height: calc(100vh - 138.64px);
 }
 .color-styling2{
     color: black;
