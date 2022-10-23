@@ -93,6 +93,8 @@
     color: white;
     font-size: xx-large;
     padding: 0.5em;
+    top: 40%; 
+    left: 43%;
 }
 .bg-image{
     background-image: url("../images/bg-1.jpg");
