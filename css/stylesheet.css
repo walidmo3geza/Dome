@@ -8,6 +8,12 @@
     .width-resize-100{
         width: 100% !important;
     }
+    .smal-screen-styling{
+        padding: 10px;
+    }
+    .d-icon-none{
+        display: none;
+    }
 }
 .bg-mai-color{
     background-color: var(--main-color);
